@@ -1,6 +1,6 @@
 > [!WARNING]
 > Nie można wysłać do repozytorium haseł do stworzenia pliku `.env` z powodu wykrywania przez Git-a hasła do bazy danych. \
-> W celu uzyskania haseł proszę o kontakt
+> W celu uzyskania haseł proszę o kontakt.
 
 # blog-platform-API
 
