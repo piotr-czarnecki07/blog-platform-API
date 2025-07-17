@@ -1,14 +1,21 @@
-# IMPORTANT
+> [!WARNING]
+> Nie można wysłać do repozytorium haseł do stworzenia pliku `.env` z powodu wykrywania przez Git-a hasła do bazy danych. \
+> W celu uzyskania haseł proszę o kontakt
 
-The database might be unavailable due to the limitations of the free plan. \
-In such a case, the API will not work and will return a verbose exception. \
+# blog-platform-API
 
-# Overview
-
-RESTful API for managing a blogging platform service.  
+RESTful API for a blogging platform service.  
 Provides CRUD operations for managing blog posts.  
 
-The API doesn't implement user authentication, which is why it should communicate with only one client, serving as an internal usage API for another application.
+> [!NOTE]
+> The API doesn't implement user authentication, which is why it should communicate with only one client, serving as an internal usage API for another application.
+
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Setting up the Environment](#setting-up-the-enviroment)
+- [How to Use](#how-to-ues)
+- [License](#license)
+- [Credits](#credits)
 
 ## Technologies Used
 
@@ -17,21 +24,21 @@ Django REST framework was used for:
 - Saving and retrieving data from the database.
 - Connecting to an external database host.
 
-PostgreSQL database from [https://aiven.io](https://aiven.io) was used for storing user posts.
+PostgreSQL database from https://aiven.io was used for storing user posts.
 
-# Starting the Environment
-
-*Note: If the project is hosted on a domain, there's no need to follow the steps below.*
+## Setting up the Environment
 
 1. Ensure Python 3.13+ is installed.
 2. Create a virtual environment, for example, by running `py -m venv venv` in the Command Prompt.
 3. Activate the environment.
 4. Install dependencies from `requirements.txt`.
-5. Create a `.env` file based on the `.env.example` in the `./BloggingPlatform/` directory. (UWAGA: nie można wysłać do repozytorium haseł do stworzenia pliku `.env` z powodu wykrywania przez Git-a hasła do bazy danych, w celu uzyskania haseł proszę o kontakt).
+5. Create a `.env` file based on the `.env.example` in the `./BloggingPlatform/` directory. (UWAGA: ).
 6. Change the Command Prompt's current working directory to the `./BloggingPlatform/` directory.
 7. Run `manage.py runserver` and open the browser on the provided host.
 
-# Usage
+*This steps are not necessary if the API is hosted on a public domain*
+
+## How to Use
 
 When the API is hosted, operations can be performed by sending proper requests to the following URLs:
 
@@ -67,8 +74,12 @@ When the API is hosted, operations can be performed by sending proper requests t
   Returns all posts that contain the provided tag.  
   Requires the `GET` HTTP method.
 
-# Credits
+## License
+
+This project is licensed under the MIT License.
+See [LICENSE](./LICENSE) for more information.
+
+## Credits
 
 - Idea: [https://roadmap.sh/projects/blogging-platform-api](https://roadmap.sh/projects/blogging-platform-api)  
 - Database Host: [https://aiven.io](https://aiven.io)  
-- Code: [https://github.com/piotr-czarnecki07](https://github.com/piotr-czarnecki07)
