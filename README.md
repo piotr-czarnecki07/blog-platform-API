@@ -1,6 +1,6 @@
 # blog-platform-API
 
-RESTful API for a blogging platform service.  
+API for a blogging platform service.  
 Provides CRUD operations for managing blog posts.  
 
 > [!NOTE]
